@@ -1,10 +1,7 @@
-from django.conf.urls import include, url
-from django.contrib import admin
+# autho/autho/urls.py
 
-urlpatterns = [
-    # Examples:
-    # url(r'^$', 'autho.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
+from django.conf.urls import patterns, include, url
 
-    url(r'^admin/', include(admin.site.urls)),
-]
+urlpatterns = patterns('',
+    url(r'^authoapp/', include('authoapp.urls')),
+)
